@@ -71,7 +71,7 @@ class Board: # Класс описывающий игровую доску
         self.busy = []
         self.ships = []
 
-    def add_ship(self, ship):  # функция add_ship, который ставит корабль на доску
+    def add_ship(self, ship):  # функция add_ship, которая ставит корабль на доску
 
         for d in ship.dots:
             if self.out(d) or d in self.busy:
